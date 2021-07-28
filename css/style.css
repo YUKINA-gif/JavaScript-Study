@@ -1,0 +1,289 @@
+@charset utf-8;
+/*　=============================
+  5名様    
+=============================*/
+span {
+  font-size: 32px;
+  color: red;
+  font-weight: bold;
+}
+
+p {
+  font-size: 14px;
+}
+/*　=============================
+  今なら無料    
+=============================*/
+p#free span {
+  font-size: 14px;
+  font-weight: bold;
+  background: linear-gradient(transparent 50%, yellow 50%);
+}
+/*　=============================
+  詳細はこちら！ボタン    
+=============================*/
+a#syousai {
+  padding: 5px 20px;
+  font-size: 14px;
+  border: 1px solid #d7ba7b;
+  color: #d7ba7b;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: 0.4s ease;
+}
+a#syousai:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+/*　=============================
+  会社概要    
+=============================*/
+h1 {
+  font-size: 14px;
+  font-weight: bold;
+  border-left: 3px solid #000;
+  padding: 5px;
+  background: #f4f4f4;
+  width: 120px;
+}
+/*　=============================
+  リスト    
+=============================*/
+ul#list1 {
+  width: 200px;
+  padding: 10px 30px;
+  border: 3px solid gray;
+  color: #333333;
+  background: #f6f6f6;
+  border-radius: 10px;
+}
+
+li.item1 {
+  padding: 10px 0;
+  line-height: 1.5em;
+}
+
+ul#list2 {
+  display: flex;
+  align-items: baseline;
+}
+
+li.item2 {
+  list-style: none;
+  padding: 10px 6px;
+  color: #999;
+}
+li.item2:first-child {
+  border-bottom: 1px solid orange;
+  color: #555;
+  line-height: 1.4;
+}
+
+/*　=============================
+  ヘッダー    
+=============================*/
+
+header {
+  width: 540px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #eee;
+  align-items: center;
+}
+h2 {
+  font-size: 20px;
+  font-weight: normal;
+  padding-left: 20px;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+}
+header nav ul li {
+  padding-left: 20px;
+}
+
+header nav ul li:last-child {
+  padding-right: 30px;
+}
+
+header nav ul li a {
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ccc;
+}
+
+/*　=============================
+  フッター    
+=============================*/
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+p#footer_rogo a {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+ul#footer_nav {
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+ul#footer_nav li {
+  margin-right: 30px;
+}
+
+/*　=============================
+  カード     
+=============================*/
+
+#card {
+  margin-top: 50px;
+  width: 300px;
+  border: 1px solid #e9eaea;
+  border-radius: 3px;
+  padding: 0 10px 20px 10px;
+  transition: 0.3s;
+}
+#card h3,p{
+  margin; 0;
+}
+
+#card p{
+  font-size: 14px;
+}
+#card a {
+   font-size: 14px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #d7b071;
+}
+
+/*　=============================
+  テーブル 料金表    
+=============================*/
+
+table{
+   border-collapse: collapse;
+  border-spacing: 0;
+  width: 50%;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+table th{
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+  font-size: 13px;
+}
+table th:not(:last-child){
+  border-right: 1px solid #ddd;
+}
+
+table td:not(:last-child){
+  border-right: 1px solid #ddd;
+}
+
+tr#price{
+  font-size: 20px;
+  font-weight: bold;
+}
+tr#syousai a{
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none
+}
+tr#pran th:nth-child(1){
+  background-color: #ddd;
+}
+tr#pran th:nth-child(2){
+  background-color: #ff0033;
+  color: #fff;
+}
+tr#pran th:nth-child(3){
+  background-color: #d7b071;
+  color: #fff;
+}
+
+/*　=============================
+  テーブル 企業概要    
+=============================*/
+
+table#company{
+  margin-top: 50px;
+}
+
+table#company th{
+  border-bottom:1px solid #ccc;
+background-color: #dedede;
+font-weight: bold;
+}
+
+table#company td{
+  border-bottom:1px solid #ccc;
+  text-align: left;
+  padding: 10px;
+}
+  /*　=============================
+  フォーム    
+=============================*/
+
+form input{
+width: 200px;
+border: none;
+display: block;
+border-bottom: 1px solid #ccc;
+}
+
+  /*　=============================
+  ハンバーガーメニュー    
+=============================*/
+
+a#line span{
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #000;
+}
+
+a#line{
+  margin-top: 50px;
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 26px;
+}
+span#line{
+  top: 0;
+}
+span#line2{
+  top: 10px;
+}
+
+span#line3{
+  top: 20px;
+}
